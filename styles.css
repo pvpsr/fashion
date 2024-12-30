@@ -1,0 +1,115 @@
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2b2b2b; /* Soft Beige */
+    color: #ffffff; /* Dark Gray for Text */
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-style: normal;
+    
+  }
+  
+
+
+/* General Reset */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Logo on left, links on right */
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #121212; /* Pastel Pink */
+    color: #FFFFFF; /* White */
+
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700; /* Bold */
+    padding-left: 35px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px; /* Spacing between items */
+  
+  }
+  
+  .nav-links li {
+    font-size: 18px;
+  }
+  
+  .nav-links a {
+    color: #FFFFFF; /* White */
+    font-weight: 400; /* Regular */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #FFD700; /* Gold when hovered */
+  }
+  
+.main-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-img{
+    width: 600px;
+    height: auto;
+    margin-top: 65px;
+    margin-right: 65px;
+}
+  
+  
+.main-button{
+    background-color: rgb(80, 80, 80);
+    color: white;
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+.main-button:hover{
+    background-color: #272727;
+}
+.main-button:hover {
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3); 
+  }
+
+.slogan{
+    margin-top: 80px;
+    margin-left: 95px;
+    padding-left: 150px;
+    padding-top: 90px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+    font-size: 0.94rem;
+    font-weight: bold;
+    color: #101010;
+    margin-top: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+  
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+
+

@@ -1,0 +1,219 @@
+
+
+/* Style for the fashion recommendation card */
+.fashion-card {
+    width: 75%;
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-top: 100px;
+    margin-left: 173px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Card height is half of the screen height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/fashioncard.jpg'); /* Add your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    padding: 20px; /* Optional: Add some padding inside the card */
+    color: white;
+    
+}
+
+/* Style for the slogan text */
+.slogan1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    z-index: 900;
+}
+
+/* Style for the sub-slogan text */
+.sub-slogan {
+    font-size: 18px;
+    color: #aaaaaa;
+    margin-top: 0;
+    padding-bottom: 20px;
+    z-index: 900;
+}
+
+/* Optional: Adding hover effect for the card */
+.fashion-card:hover {
+    transform: scale(1.010); /* Zoom in slightly */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+
+/* Fixed navbar style */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 1000;
+}
+
+/* Adjust content below the navbar */
+body {
+    padding-top: 60px; /* Adjust this value to prevent content from hiding behind the navbar */
+    padding-right: 20px;
+    background-color: #1e1e1e;
+}
+
+.nav-links{
+    padding-right: 50px;
+}
+
+.logo{
+    padding-left: 35px;
+}
+
+.let-button{
+    background-color: rgb(80, 80, 80);
+    color: white;
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+
+.heading-text{
+    margin-top: 70px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fashion-card1 {
+    position: relative;
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fashion-card1:hover {
+    transform: scale(1.010); /* Zoom in slightly */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.fashion-card1 .slogan {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.fashion-card1 .sub-slogan {
+    font-size: 1em;
+}
+
+.fashion-card1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay */
+    z-index: 1;
+}
+
+.fashion-card1 .content {
+    position: relative;
+    z-index: 2;
+}
+
+#card1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/wedding.jpg'); /* Add your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    border-radius: 10px;
+}
+
+#card2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/casual.jpg'); /* Add your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    border-radius: 10px;
+}
+
+#card3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/work.jpg'); /* Add your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    border-radius: 10px;
+}
+
+#card4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/party.jpg'); /* Add your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    border-radius: 10px;
+}
+
+
+.review {
+    width: 75%;
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-top: 40px;
+    margin-left: 173px;
+    margin-bottom: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Card height is half of the screen height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./assets/feedback.jpg'); /* Add your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    padding: 20px; /* Optional: Add some padding inside the card */
+    color: white;
+    
+}
+
+.review:hover {
+    transform: scale(1.010); /* Zoom in slightly */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
